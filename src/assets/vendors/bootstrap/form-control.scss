@@ -1,0 +1,19 @@
+.form-control {
+   display: block;
+   width: 100%;
+   height: calc(1.5em + 1.8rem + 2px);
+   padding: 0.9rem 2.25rem;
+   font-family: "MyriadPro";
+   font-weight: 500;
+   color: $colorWhite;
+   background-color: #243448;
+   border: 1px solid $colorDark;
+   border-radius: 0;
+   &::placeholder {
+      color: rgba($colorWhite, 0.67);
+   }
+   @include media-to($mediaMD) {
+      height: calc(1.5em + 1.4rem + 2px);
+      padding: 0.75rem 1.5rem;
+   }
+}

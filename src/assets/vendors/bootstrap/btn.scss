@@ -1,0 +1,43 @@
+.btn {
+   font-weight: 700;
+   color: $colorDark;
+   border: 3px solid transparent;
+   padding: 1rem 4rem;
+   font-size: 1.125rem;
+   line-height: 1.5;
+   border-radius: 0;
+   text-transform: uppercase;
+   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+   @include media-to($mediaMD) {
+      padding: 0.75rem 2.5rem;
+      font-size: 1rem;
+      &:focus {
+         outline: none;
+         box-shadow: none
+      }
+   }
+   &.btn-outline-dark {
+      color: $colorDark;
+      border-color: $colorDark;
+      &:hover {
+         color: $colorWhite;
+         @include media-to($mediaMD) {
+            color: $colorDark;
+            background-color: transparent;
+            border-color: $colorDark;
+         }
+      }
+   }
+   &.btn-outline-light {
+      color: $colorWhite;
+      border-color: $colorWhite;
+      &:hover {
+         color: $colorDark;
+         @include media-to($mediaMD) {
+            color: $colorWhite;
+            background-color: transparent;
+            border-color: $colorWhite;
+         }
+      }
+   }
+}

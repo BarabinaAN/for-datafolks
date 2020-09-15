@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: #0d1b2b;
+  background-color: $colorDark;
   min-height: 600px;
   padding: 2rem;
   box-sizing: border-box;
@@ -12,9 +12,9 @@
     }
   }
   a:not(.contact__phone) {
-    color: #3d95e3;
+    color:$colorBlue
   }
-  @include media-to(768px) {
+  @include media-to($mediaMD) {
     padding: 1.5rem 0;
   }
 }

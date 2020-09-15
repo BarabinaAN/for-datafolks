@@ -1,0 +1,29 @@
+.modal-dialog {
+   @include media-from($mediaLG) {
+      max-width: 70%;
+   }
+}
+.modal-content {
+   border: 1px solid transparent;
+   border-radius: 0;
+}
+.modal-title {
+   text-transform: uppercase;
+}
+.modal-header {
+   border-bottom: none;
+   border-radius: 0;
+   padding: 1rem 1.5rem;
+}
+.modal-body {
+   padding: 0;
+   .project__preview {
+      min-height: 400px;
+      z-index: 0;
+   }
+}
+.modal-header .close {
+   &:focus {
+      outline: none;
+   }
+}

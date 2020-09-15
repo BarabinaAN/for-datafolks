@@ -9,32 +9,32 @@ h2 {
   font-size: 2.125rem;
   font-weight: 400;
   text-transform: uppercase;
-  @include media-to(768px) {
-    font-size: 1.5rem;
+  @include media-to($mediaMD) {
+    font-size: 2rem;
   }
 }
 p {
   font-family: "MyriadPro", sans-serif;
   font-size: 1.125rem;
-  @include media-to(768px) {
+  @include media-to($mediaMD) {
     font-size: 1rem;
   }
 }
 .my-6 {
   margin: 4rem 0;
-  @include media-to(768px) {
+  @include media-to($mediaMD) {
     margin: 3rem 0;
   }
 }
 .mb-6 {
   margin-bottom: 4rem;
-  @include media-to(768px) {
+  @include media-to($mediaMD) {
     margin-bottom: 3rem;
   }
 }
 .my-7 {
   margin: 5rem 0;
-  @include media-to(768px) {
+  @include media-to($mediaMD) {
     margin: 4rem 0;
   }
 }

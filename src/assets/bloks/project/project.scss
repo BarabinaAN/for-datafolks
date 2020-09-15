@@ -1,6 +1,6 @@
 .project {
   text-align: center;
-  @include media-from(992px) {
+  @include media-from($mediaLG) {
     header {
       width: 85%;
       margin: 0 auto;
@@ -19,10 +19,15 @@
   box-sizing: border-box;
   overflow: hidden;
   transition: color 0.25s ease-in-out, background 0.5s ease-in-out;
-  &:hover {
-    background: linear-gradient(0deg, rgba(2, 0, 36, 0.7) 0%, rgba(37, 54, 74, 0.5) 25%, rgba(37, 54, 74, 0.4) 50%);
-    & > span {
-      color: #3d95e3;
+  @include media-to($mediaLG) {
+    min-height: 400px;
+  }
+  @include media-from($mediaMD) {
+    &:hover {
+      background: linear-gradient(0deg, rgba(2, 0, 36, 0.7) 0%, rgba(37, 54, 74, 0.5) 25%, rgba(37, 54, 74, 0.4) 50%);
+      & > span {
+        color:$colorBlue
+      }
     }
   }
   img {
@@ -39,6 +44,9 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    @include media-to($mediaMD) {
+      font-size: 1.25rem;
+    }
   }
 
   &:hover {

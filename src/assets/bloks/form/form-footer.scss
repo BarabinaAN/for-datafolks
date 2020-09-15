@@ -3,7 +3,7 @@
    padding: 2.5rem;
    border: 5px solid rgba(#546682, 0.35);
    box-sizing: border-box;
-   @include media-to(768px) {
+   @include media-to($mediaMD) {
       padding: 1.5rem;
    }
 }
