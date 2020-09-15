@@ -1,0 +1,14 @@
+.form-footer {
+   text-align: center;
+   padding: 2.5rem;
+   border: 5px solid rgba(#546682, 0.35);
+   box-sizing: border-box;
+   @include media-to(768px) {
+      padding: 1.5rem;
+   }
+}
+.form-link {
+   margin: 1.25rem 0;
+   text-align: center;
+   text-decoration: underline;
+}

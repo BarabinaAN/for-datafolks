@@ -1,0 +1,47 @@
+.project {
+  text-align: center;
+  @include media-from(992px) {
+    header {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+}
+.project__preview {
+  position: relative;
+  display: flex;
+  min-height: 580px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.6) 0%, rgba(37, 54, 74, 0.4) 25%, rgba(37, 54, 74, 0) 50%);
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: color 0.25s ease-in-out, background 0.5s ease-in-out;
+  &:hover {
+    background: linear-gradient(0deg, rgba(2, 0, 36, 0.7) 0%, rgba(37, 54, 74, 0.5) 25%, rgba(37, 54, 74, 0.4) 50%);
+    & > span {
+      color: #3d95e3;
+    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-height: 100%;
+    z-index: -1;
+    transform: translateX(-50%);
+    min-width: 100%;
+  }
+  & > span {
+    color: $colorWhite;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

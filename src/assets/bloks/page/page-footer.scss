@@ -1,0 +1,20 @@
+.page-footer {
+  background-color: #0d1b2b;
+  min-height: 600px;
+  padding: 2rem;
+  box-sizing: border-box;
+  a {
+    display: block;
+    font-family: "MyriadPro";
+    word-wrap: break-word;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  a:not(.contact__phone) {
+    color: #3d95e3;
+  }
+  @include media-to(768px) {
+    padding: 1.5rem 0;
+  }
+}

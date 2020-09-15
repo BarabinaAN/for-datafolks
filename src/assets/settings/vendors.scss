@@ -1,0 +1,49 @@
+.btn {
+   font-weight: 700;
+   color: $colorDark;
+   border: 3px solid transparent;
+   padding: 1rem 4rem;
+   font-size: 1.125rem;
+   line-height: 1.5;
+   border-radius: 0;
+   text-transform: uppercase;
+   transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
+   @include media-to(768px) {
+      padding: 0.75rem 2.5rem;
+      font-size: 1rem;
+   }
+   &.btn-outline-dark {
+      color: $colorDark;
+      border-color: #00264c;
+      &:hover {
+         color: $colorWhite;
+      }
+   }
+   &.btn-outline-light {
+      color: $colorWhite;
+      border-color: $colorWhite;
+      &:hover {
+         color: $colorDark;
+      }
+   }
+}
+
+.form-control {
+   display: block;
+   width: 100%;
+   height: calc(1.5em + 1.8rem + 2px);
+   padding: 0.9rem 2.25rem;
+   font-family: "MyriadPro";
+   font-weight: 500;
+   color: $colorWhite;
+   background-color: #243448;
+   border: 1px solid #0d1b2b;
+   border-radius: 0;
+   &::placeholder {
+      color: rgba($colorWhite, 0.67);
+   }
+   @include media-to(768px) {
+      height: calc(1.5em + 1.4rem + 2px);
+      padding: 0.75rem 1.5rem;
+    }
+}
