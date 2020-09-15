@@ -38,7 +38,7 @@ module.exports = (env = {}) => {
 
   return {
     output: {
-      publicPath: '/',
+      publicPath: isProd ? './' : isDev && "/",
     },
     mode: isProd ? 'production' : isDev && "development",
     module: {
